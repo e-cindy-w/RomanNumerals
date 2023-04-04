@@ -113,10 +113,10 @@ public class RomanNumeralUnitTests {
         assertThrows(IllegalArgumentException.class, () -> romanNumeral.convertToInteger("XIZ"));
     }
     
-////     @Test
-////    public void notVaild() {
-////        RomanNumeral romanNumeral = new RomanNumeral();
-////        assertThrows(IllegalArgumentException.class, () -> romanNumeral.convertToInteger("VV"));
-////    }
-//    
+     @Test
+    public void notVaild() {
+        RomanNumeral romanNumeral = new RomanNumeral();
+        assertThrows(IllegalArgumentException.class, () -> romanNumeral.convertToInteger("VV"));
+    }
+
 }

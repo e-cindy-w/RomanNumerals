@@ -12,6 +12,9 @@ public class RomanNumeral {
         if (romanNumeral == null || romanNumeral.isEmpty()) {
             throw new IllegalArgumentException("Input cannot be null or empty.");
         }
+        if (!romanNumeral.matches("^(M{0,4})(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$")) {
+             throw new IllegalArgumentException("Invalid input: " + romanNumeral);
+        }
 
         int result = 0;
         int prev = 0;
